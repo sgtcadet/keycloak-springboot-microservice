@@ -9,13 +9,20 @@ import java.util.Set;
 public class Claims {
     private String username;
     private String userId;
+    private String subjectId;
     private Set<String> roles;
 
     public Claims(){
         roles = new HashSet<>();
     }
 
+    public String getSubjectId() {
+        return subjectId;
+    }
 
+    public void setSubjectId(String subjectId) {
+        this.subjectId = subjectId;
+    }
 
     public String getUsername() {
         return username;

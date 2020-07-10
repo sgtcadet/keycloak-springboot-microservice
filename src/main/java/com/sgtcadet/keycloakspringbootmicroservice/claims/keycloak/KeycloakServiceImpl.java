@@ -30,6 +30,7 @@ public class KeycloakServiceImpl implements KeycloakService{
         claims.setUserId(token.getId());
 //        claims.setUserId(Long.parseLong(token.getId()));
         claims.setUsername(token.getPreferredUsername());
+        claims.setSubjectId(token.getSubject());
         claims.setRoles(roles);
         return claims;
     }
